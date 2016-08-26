@@ -141,6 +141,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cmdLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarAutoActionPerformed
         // TODO add your handling code here:
+        
         double num,n;
         num=Double.parseDouble(JOptionPane.showInputDialog(this,"Digite el numero hasta donde quiere el llenado"));
         while (num<v.length){
@@ -160,6 +161,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
         // TODO add your handling code here:
+        
         txtResultado.append ("Los elementos del vector 1 son: ");
         for (int i =0; i<v.length;i++){
         txtResultado.append (v[i]+"\n");
@@ -169,6 +171,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cdmBorrarrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cdmBorrarrActionPerformed
         // TODO add your handling code here:
+        
          txtLongitud.setText("");
         txtResultado.setText("");
         
@@ -178,6 +181,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cmdLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManualActionPerformed
         // TODO add your handling code here:
+        
         double n;
         for (int i=0; i<v.length; i++) {
         n= Double.parseDouble(JOptionPane.showInputDialog(this, "Digite el elemento en la posicion"+i));
@@ -188,6 +192,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cmCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmCrearActionPerformed
         // TODO add your handling code here:
+        
         int longitud;
         if (txtLongitud.getText().trim().isEmpty()){
         JOptionPane.showMessageDialog(this,"Digite la longitud","ERROR",JOptionPane.ERROR_MESSAGE);
@@ -209,6 +214,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void cmdRepetidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdRepetidosActionPerformed
         // TODO add your handling code here:
+        
         double conta1=0, num =0;
         
         for (int i = 0; i<v.length;i++){
@@ -236,6 +242,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
 
     private void txtLongitudKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtLongitudKeyTyped
         // TODO add your handling code here:
+        
         char c=evt.getKeyChar();
           if (!Character.isDigit(c)){
           
